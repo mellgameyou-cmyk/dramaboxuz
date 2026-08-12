@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DramaBoxUz Mini App</title>
+    <title>DramaBoxUz</title>
+    <!-- Telegram Web App kutubxonasi -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
-        body { background-color: #121212; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #f39c12; }
-        .video-box { margin-top: 20px; }
-        video { width: 100%; max-width: 400px; border-radius: 10px; }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+        }
+        h2 {
+            color: #ffaa00;
+            margin-bottom: 5px;
+        }
+        p {
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+        .video-box {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #000;
+        }
+        video {
+            width: 100%;
+            max-height: 70vh;
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <h1>🎬 DramaBoxUz</h1>
-    <p>Kino va seriallar to'plami</p>
+
+    <h2>🎬 DramaBoxUz</h2>
+    <p>Kino va seriallar</p>
+
+    <!-- Videopleyer qismi -->
     <div class="video-box">
-        <p>Tez kunda barcha qismlar yuklanadi!</p>
+        <video controls playsinline preload="metadata">
+            <!-- source qismiga videongizning to'g'ridan-to'g'ri havolasini yozasiz -->
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
+        </video>
     </div>
+
 </body>
 </html>
